@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/titleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/dateLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/welcome_text_size"
+                android:text="TextView"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/premiseLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/welcome_text_size"
+                android:text="TextView"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/titleLayout"
+            android:id="@+id/contentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/upperContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_marginRight="@dimen/add_roster_padding_sides"
+                    android:layout_marginLeft="@dimen/add_roster_padding_sides"
+                    android:id="@+id/upperContentContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/addField"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/button_margin"
+                            android:background="@color/colorPrimary"
+                            android:textColor="@color/colorPrimaryBackground"
+                            android:padding="@dimen/button_text_padding"
+                            android:text="@string/add_time_slot_text"/>
+                        <Button
+                            android:id="@+id/removeField"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:textColor="@color/colorPrimaryBackground"
+                            android:padding="@dimen/button_text_padding"
+                            android:text="@string/remove_all_slots_text"/>
+
+                    </LinearLayout>
+
+
+            </RelativeLayout>
+
+                <LinearLayout
+                    android:padding="@dimen/add_roster_padding_sides"
+                    android:layout_below="@id/upperContentContent"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:id="@+id/startTimeLabel"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/start_time_text" />
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:id="@+id/endTimeLabel"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/end_time_text" />
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:id="@+id/empNameLabel"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/employee_name_text" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/middleContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/upperContent">
+            </LinearLayout>
+
+            <RelativeLayout
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/middleContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/addRoster"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorPrimaryBackground"
+                    android:padding="@dimen/button_text_padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/submit_daily_roster_text"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Mellon</string>
+    <string name="full_name_label">Full Name:</string>
+    <string name="full_name_text">Full Name</string>
+    <string name="email_label">Email:</string>
+    <string name="email_text">Email</string>
+    <string name="account_type_label">Account Type:</string>
+    <string name="password_text">Password</string>
+    <string name="password_label">Password:</string>
+    <string name="login_text">Login</string>
+    <string name="register_text">Register</string>
+
+    <string-array name="account_type">
+        <item>Employee</item>
+        <item>Employer</item>
+    </string-array>
+
+    <string-array name="select">
+        <item>Select</item>
+    </string-array>
+
+    <string name="title_activity_bottom_navigation">bottom_navigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="home_welcome_text">Welcome to Mellon! A friend for your roster needs</string>
+    <string name="add_premise_text">ADD PREMISE</string>
+    <string name="premise_list_text">Premise List</string>
+    <string name="premise_name_hint">Premise Name</string>
+    <string name="staff_welcome_text">Our apologies, this page is in development.. Thank you for understanding</string>
+    <string name="create_roster_text">Create Daily Roster</string>
+    <string name="add_time_slot_text">Add Time slot</string>
+    <string name="remove_all_slots_text">Remove All slots</string>
+    <string name="start_time_text">Start Time</string>
+    <string name="end_time_text">End Time</string>
+    <string name="employee_name_text">Employee Name</string>
+    <string name="submit_daily_roster_text">Submit Daily Roster</string>
+    <string name="roster_details_dummy_text">20-12-2019</string>
+    <string name="roster_details_dummy_text_premise">Tobys</string>
+    <string name="logout_text">Logout</string>
+    <string name="request_day_off_text">Request Day Off</string>
+    <string name="date_dummy_text">31 December 2016</string>
+    <string name="day_dummy_text">Sunday</string>
+    <string name="name_dummy_text">John</string>
+    <string name="end_time_dummy">19:00</string>
+    <string name="start_time_dummy_text">18:00</string>
+    <string name="remove_text">remove</string>
+</resources>

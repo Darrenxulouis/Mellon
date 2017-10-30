@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimaryBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relLayoutMid"
+            android:layout_above="@+id/relLayoutBotBar">
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/add_premise_margin"
+                android:id="@+id/content_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/addPremiseLabel"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_premise_text"
+                    android:textSize="@dimen/premise_string_size"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:textCursorDrawable="@color/colorPrimary"
+                    android:textAlignment="center"
+                    android:layout_below="@id/addPremiseLabel"
+                    android:id="@+id/addPremiseInput"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/premise_name_hint"
+                    android:textSize="@dimen/premise_string_size"/>
+                <RelativeLayout
+                    android:layout_below="@id/addPremiseInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+                    <Button
+
+                        android:id="@+id/addPremiseButton"
+                        android:text="@string/add_premise_text"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@color/colorPrimaryBackground"
+                        android:padding="@dimen/button_text_padding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_below="@id/content_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/premiseListLabel"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/premise_list_text_size"
+                    android:text="@string/premise_list_text"/>
+
+                <ListView
+                    android:layout_below="@+id/premiseListLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+
+                    android:id="@+id/premiseListView">
+                </ListView>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nav_bar_height"
+            android:id="@+id/relLayoutBotBar"
+            android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:id="@+id/navigation_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nav_bar_height"
+                android:layout_gravity="bottom">
+                <android.support.design.widget.BottomNavigationView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/nav_bottom"
+                    android:background="@drawable/white_grey_border_top"
+                    app:menu="@menu/admin_navigation">
+                </android.support.design.widget.BottomNavigationView>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

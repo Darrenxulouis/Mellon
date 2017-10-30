@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/spinnerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <RelativeLayout
+                android:paddingTop="@dimen/add_roster_padding_vertical"
+                android:paddingBottom="@dimen/add_roster_padding_vertical"
+                android:paddingRight="@dimen/add_roster_padding_sides"
+                android:paddingLeft="@dimen/add_roster_padding_sides"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <Spinner
+                    android:id="@+id/premiseInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/nav_bar_height"
+                    android:textAlignment="center"
+                    android:background="@drawable/premise_spinner">
+                </Spinner>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:gravity="center_horizontal"
+            android:layout_below="@id/spinnerLayout"
+            android:id="@+id/calendarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <DatePicker
+                android:headerBackground="@color/colorPrimary"
+                android:id="@+id/newRosterDatePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:gravity="center_horizontal"
+            android:layout_below="@id/calendarLayout"
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/createNewRosterButton"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorPrimaryBackground"
+                android:layout_marginTop="10sp"
+                android:padding="@dimen/button_text_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_roster_text"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

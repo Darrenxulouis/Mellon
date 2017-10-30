@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rosterLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:paddingBottom="@dimen/item_padding"
+            android:paddingRight="@dimen/item_padding"
+            android:paddingLeft="@dimen/item_padding"
+            android:paddingTop="@dimen/item_padding"
+            android:background="@drawable/recycler_view_individual_item"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="@color/colorPrimaryBackground"
+                android:id="@+id/rosterDate"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/date_dummy_text"
+                android:textSize="@dimen/recycler_view_text_size"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:textColor="@color/colorPrimaryBackground"
+                    android:layout_weight="1"
+                    android:id="@+id/rosterDay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/day_dummy_text"
+                    android:textSize="@dimen/recycler_view_text_size"/>
+                <TextView
+                    android:textColor="@color/colorPrimaryBackground"
+                    android:layout_weight="1"
+                    android:id="@+id/rosterPremise"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/roster_details_dummy_text_premise"
+                    android:textSize="@dimen/recycler_view_text_size"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

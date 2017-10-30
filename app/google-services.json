@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "253819502711",
+    "firebase_url": "https://mellon-13a58.firebaseio.com",
+    "project_id": "mellon-13a58",
+    "storage_bucket": "mellon-13a58.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:253819502711:android:87d6c5e24c6efc36",
+        "android_client_info": {
+          "package_name": "com.mad.mellon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "253819502711-o9m26s27qchsn654h4dop4blflc80oa7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mad.mellon",
+            "certificate_hash": "f27cb887419b31b4089a81798e99ad11e2e54f7f"
+          }
+        },
+        {
+          "client_id": "253819502711-8p1ouo6e0lkq7kc4j3cl8v4qt2q706tt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLUhzJsjcGRWiAnAWCu8MQbAk-0ayVihU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "253819502711-8p1ouo6e0lkq7kc4j3cl8v4qt2q706tt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

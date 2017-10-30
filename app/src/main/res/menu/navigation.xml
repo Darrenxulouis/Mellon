@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/schedule"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Schedule" />
+
+    <item
+        android:id="@+id/roster"
+        android:icon="@drawable/ic_assignment_ind_black_24dp"
+        android:title="Roster" />
+
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="Account" />
+
+</menu>

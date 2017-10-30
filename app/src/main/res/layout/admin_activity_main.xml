@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryBackground"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/welcome_text_padding"
+            android:paddingRight="@dimen/welcome_text_padding"
+            android:id="@+id/relLayoutMid"
+            android:layout_above="@+id/relLayoutBotBar">
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/welcome_text_size"
+                android:text="@string/home_welcome_text"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nav_bar_height"
+            android:id="@+id/relLayoutBotBar"
+            android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:id="@+id/navigation_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nav_bar_height"
+                android:layout_gravity="bottom">
+                <android.support.design.widget.BottomNavigationView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/nav_bottom"
+                    android:background="@drawable/white_grey_border_top"
+                    app:menu="@menu/admin_navigation">
+                </android.support.design.widget.BottomNavigationView>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
